@@ -24,6 +24,7 @@ public class guide1 extends AppCompatActivity {
             public void onClick(View view) {
                 startActivity(new Intent(guide1.this, guide2.class));
             }
+
         });
     }
 
