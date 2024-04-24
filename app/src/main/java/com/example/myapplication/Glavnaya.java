@@ -23,9 +23,7 @@ public class Glavnaya extends AppCompatActivity   {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_glavnaya);
 
-
     }
-
     public void gotohis(View v) {
         startActivity(new Intent(Glavnaya.this, history.class));
     }
@@ -33,10 +31,6 @@ public class Glavnaya extends AppCompatActivity   {
     public void gotosett(View v) {
         startActivity(new Intent(Glavnaya.this, Settings.class));
     }
-
-
-
-
 }
 
 
