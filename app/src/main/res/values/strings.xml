@@ -1,3 +1,65 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string-array name="processors_array">
+        <item>Не выбрано</item>
+        <item>AMD Ryzen 3 3200G</item>
+        <item>Intel Core i3-9100F</item>
+        <item>AMD Ryzen 5 3400G</item>
+        <item>Intel Core i5-9400F</item>
+        <item>AMD Ryzen 3 3300X</item>
+        <item>AMD Ryzen 5 3600</item>
+        <item>Intel Core i5-10400F</item>
+        <item>AMD Ryzen 7 3700X</item>
+        <item>Intel Core i7-9700K</item>
+        <item>AMD Ryzen 5 5600X</item>
+        <item>Intel Core i7-10700K</item>
+        <item>AMD Ryzen 9 5900X</item>
+        <item>Intel Core i9-10900K</item>
+        <item>AMD Ryzen 9 5950X</item>
+        <item>Intel Core i9-11900K</item>
+    </string-array>
+    <string-array name="videokarta_array">
+        <item>Не выбрано</item>
+        <item>NVIDIA GeForce GT 1030</item>
+        <item>AMD Radeon RX 570</item>
+        <item>NVIDIA GeForce GTX 1650</item>
+        <item>AMD Radeon RX 580</item>
+        <item>NVIDIA GeForce GTX 1660</item>
+        <item>NVIDIA GeForce RTX 2060</item>
+        <item>AMD Radeon RX 5600 XT</item>
+        <item>NVIDIA GeForce RTX 2070 Super</item>
+        <item>AMD Radeon RX 5700 XT</item>
+        <item>NVIDIA GeForce RTX 3060 Ti</item>
+        <item>NVIDIA GeForce RTX 3070</item>
+        <item>NVIDIA GeForce RTX 3080</item>
+        <item>AMD Radeon RX 6900 XT</item>
+        <item>NVIDIA GeForce RTX 3090</item>
+    </string-array>
+    <string-array name="Mat_Plat_array">
+        <item>Не выбрано</item>
+        <item>Материнская плата Gigabyte GA-A320M-H mATX AM4</item>
+        <item>Материнская плата Gigabyte H310M S2H 1151v2</item>
+        <item>Материнская плата MSI B450M MORTAR MAX mATX AM4</item>
+        <item>Материнская плата MSI Z370-A PRO 1151v2</item>
+        <item>Материнская плата ASRock X370 Pro4 AM4</item>
+        <item>Материнская плата ASRock H410M-HVS mATX LGA1200</item>
+        <item>Материнская плата Gigabyte B550 AORUS ELITE AM4</item>
+        <item>Материнская плата MSI Z390-A PRO 1151v2</item>
+        <item>Материнская плата MSI Z490-A PRO LGA1200</item>
+        <item>Материнская плата MSI MEG X570 UNIFY AM4</item>
+        <item>Материнская плата MSI MPG Z490 GAMING CARBON WIFI LGA1200</item>
+        <item>Материнская плата MSI MAG X570 TOMAHAWK WIFI AM4</item>
+        <item>Материнская плата ASRock Z490 EXTREME4 LGA1200</item>
+
+    </string-array>
+    <string-array name="Block_Pitan_array">
+        <item>300W</item>
+        <item>450W</item>
+        <item>500W</item>
+        <item>600W</item>
+        <item>700W</item>
+        <item>750W</item>
+        <item>850W</item>
+        <item>900W</item>
+    </string-array>
 </resources>
