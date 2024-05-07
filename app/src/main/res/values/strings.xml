@@ -34,6 +34,7 @@
         <item>NVIDIA GeForce RTX 3080</item>
         <item>AMD Radeon RX 6900 XT</item>
         <item>NVIDIA GeForce RTX 3090</item>
+        <item>NVIDIA GeForce RTX 4090</item>
     </string-array>
     <string-array name="Mat_Plat_array">
         <item>Не выбрано</item>
@@ -53,6 +54,7 @@
 
     </string-array>
     <string-array name="Block_Pitan_array">
+        <item>Не выбрано</item>
         <item>300W</item>
         <item>450W</item>
         <item>500W</item>

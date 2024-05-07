@@ -16,7 +16,7 @@
             android:name=".Settings"
             android:exported="false" />
         <activity
-            android:name=".history"
+            android:name=".result"
             android:exported="false" />
         <activity
             android:name=".Glavnaya"

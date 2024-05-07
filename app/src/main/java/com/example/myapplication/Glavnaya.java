@@ -2,24 +2,17 @@ package com.example.myapplication;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class Glavnaya extends AppCompatActivity   {
-    private Spinner processorSpinner, videokartaSpinner, matplatSpinner;
+    private Spinner processorSpinner, videokartaSpinner, matplatSpinner, blockpitSpinner;
     Button Podobrat;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,49 +22,48 @@ public class Glavnaya extends AppCompatActivity   {
         processorSpinner = findViewById(R.id.processorSpinner);
         videokartaSpinner = findViewById(R.id.videokartaSpinner);
         matplatSpinner = findViewById(R.id.matplatSpinner);
+        blockpitSpinner = findViewById(R.id.blockpitSpinner);
         Podobrat = findViewById(R.id.Podobrat);
-        setupSpinners();
+        Spinners();
         Podobrat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Проверяем, выбраны ли все параметры комплектующих
-                if (processorSpinner.getSelectedItemPosition() == 0 ||
-                        videokartaSpinner.getSelectedItemPosition() == 0 ||
-                        matplatSpinner.getSelectedItemPosition() == 0){
-
-                    // Если не выбраны, выводим сообщение и не переходим на новое активити
-                    Toast.makeText(game_selection.this, "Выберите комплектующие!", Toast.LENGTH_SHORT).show();
+                if (processorSpinner.getSelectedItemPosition() == 0 &&
+                        videokartaSpinner.getSelectedItemPosition() == 0 &&
+                        matplatSpinner.getSelectedItemPosition() == 0 &&
+                        blockpitSpinner.getSelectedItemPosition() == 0){
+                    Toast.makeText(Glavnaya.this, "Выберите хоть что-нибудь!!!", Toast.LENGTH_SHORT).show();
                 } else {
-                    // Если все параметры выбраны, создаем интент и передаем данные в новое активити
-                    Intent intent = new Intent(game_selection.this, ResultActivity.class);
+                         Intent intent = new Intent(Glavnaya.this, result.class);
                     intent.putExtra("processor", processorSpinner.getSelectedItem().toString());
                     intent.putExtra("graphicsCard", videokartaSpinner.getSelectedItem().toString());
-                    intent.putExtra("ram", matplatSpinner.getSelectedItem().toString());
+                    intent.putExtra("matplat", matplatSpinner.getSelectedItem().toString());
+                    intent.putExtra("blockpit", blockpitSpinner.getSelectedItem().toString());
                     startActivity(intent);
                 }
             }
         });
     }
-    private void setupSpinners() {
+    private void Spinners() {
         ArrayAdapter<CharSequence> processorAdapter = ArrayAdapter.createFromResource(this,
                 R.array.processors_array, android.R.layout.simple_spinner_item);
         processorAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         processorSpinner.setAdapter(processorAdapter);
 
-        ArrayAdapter<CharSequence> graphicsCardAdapter = ArrayAdapter.createFromResource(this,
+        ArrayAdapter<CharSequence> vieokartaapt = ArrayAdapter.createFromResource(this,
                 R.array.videokarta_array, android.R.layout.simple_spinner_item);
-        graphicsCardAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        videokartaSpinner.setAdapter(graphicsCardAdapter);
+        vieokartaapt.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        videokartaSpinner.setAdapter(vieokartaapt);
 
         ArrayAdapter<CharSequence> ramAdapter = ArrayAdapter.createFromResource(this,
                 R.array.Mat_Plat_array, android.R.layout.simple_spinner_item);
         ramAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         matplatSpinner.setAdapter(ramAdapter);
+        ArrayAdapter<CharSequence>  blockpitadap = ArrayAdapter.createFromResource(this,
+                R.array.Block_Pitan_array, android.R.layout.simple_spinner_item);
+        blockpitadap.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        blockpitSpinner.setAdapter(blockpitadap);
 
-    }
-
-    public void gotohis(View v) {
-        startActivity(new Intent(Glavnaya.this, history.class));
     }
 
     public void gotosett(View v) {
