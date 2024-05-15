@@ -24,7 +24,7 @@
         app:layout_constraintVertical_bias="0.068" />
 
     <TextView
-        android:id="@+id/resultTextView"
+        android:id="@+id/resultTextView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="serif"
@@ -40,7 +40,7 @@
         app:layout_constraintVertical_bias="0.411" />
 
     <TextView
-        android:id="@+id/resultTextView"
+        android:id="@+id/resultTextView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="serif"
@@ -56,7 +56,7 @@
         app:layout_constraintVertical_bias="0.308" />
 
     <TextView
-        android:id="@+id/resultTextView"
+        android:id="@+id/resultTextView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="serif"
@@ -72,7 +72,7 @@
         app:layout_constraintVertical_bias="0.357" />
 
     <TextView
-        android:id="@+id/resultTextView"
+        android:id="@+id/resultTextView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="serif"
